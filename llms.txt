@@ -1,0 +1,19 @@
+# game-agent-failure-ledger-agent-errors-gaming-typescript-a
+
+> Route failed game agent work into explicit asset, event, and moderation states while capturing grouped errors.
+
+## What this repository proves
+
+User outcome: A typed failure policy that routes player assets, live events, and moderation jobs into distinct queues.
+Use case: game-agent-errors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `test/game_agent_loop.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

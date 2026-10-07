@@ -1,0 +1,26 @@
+{
+  "name": "game-agent-failure-ledger",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test test/game_agent_loop.test.ts",
+    "dev": "tsx src/game_failure_service.ts",
+    "demo": "tsx scripts/record_asset_failure.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
